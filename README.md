@@ -2,7 +2,7 @@
   <img src="https://telegra.ph/file/ad27e83709cf948f1f670.jpg">
 </p>
 
-# PglRobot 
+# Dablu Robot
 
 <p align="center">
 - x -|│  “	Just some code who is a bot for fun. ”  │| - x -
