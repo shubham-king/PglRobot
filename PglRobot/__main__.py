@@ -74,10 +74,10 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am a  Powerfull  group management bot. You can find my list of available commands with /help.
+I am a  Powerfull  group management bot. You can find my list of available commands with /help.\n\n Support us Dablu needs your help!
 """
 G_START_TEXT = """
-Hello PglRobot Is In The Chat.
+Hello DABLU Is In The Chat.
 Uptime - {}!
 """
 
@@ -101,14 +101,14 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-PglRobot_IMG = "https://telegra.ph/file/f1d7b30b05ba9f0dbf4e5.jpg"
+PglRobot_IMG = "https://telegra.ph/file/3de9fd44e0194d6e20f49.jpg"
 
-PglRobotG_IMG = "https://telegra.ph/file/e8881931bc000c75e8f13.jpg"
+PglRobotG_IMG = "https://telegra.ph/file/3de9fd44e0194d6e20f49.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting [Gaurav Verma](https://t.me/iisgaurav).
- Using [PayPal](paypal.me/iisgaurav).
- Those who cannot provide monetary support are welcome to help us develop the bot at @VegaCodes.
+ You can support the project by contacting [DABLU ](https://t.me/Robottech_official).
+ 
+ Those who cannot provide monetary support are welcome to help us develop the bot at @robottech_chat.
  """
 
 IMPORTED = {}
@@ -239,13 +239,13 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="UPDATES ⚡️",
-                                url="https://t.me/VCUpdates",
+                                url="https://t.me/RobotTech_official",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="SOURCE CODE ⚡️",
-                                url="https://github.com/iisgaurav/PglRobot",
+                                text="OWNER ⚡️",
+                                url="https://t.me/robottech_memeber",
                             ),
                         ],
                     ]
@@ -629,7 +629,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", "PglRobot now ready to work!"
+                f"@{SUPPORT_CHAT}", "Dablu now ready to work!"
             )
         except Unauthorized:
             LOGGER.warning(
